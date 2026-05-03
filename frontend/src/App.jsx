@@ -3,6 +3,7 @@ import { AuthProvider, useAuth } from './context/AuthContext';
 import Layout from './components/Layout';
 import DashboardPage from './pages/DashboardPage';
 import TasksPage from './pages/TasksPage';
+import ProjectsPage from './pages/ProjectsPage';
 import LoginPage from './pages/LoginPage';
 import SignupPage from './pages/SignupPage';
 
@@ -28,8 +29,7 @@ function App() {
             <Route index element={<Navigate to="/dashboard" replace />} />
             <Route path="dashboard" element={<DashboardPage />} />
             <Route path="tasks" element={<TasksPage />} />
-            {/* ProjectsPage can be added here if needed */}
-            <Route path="projects" element={<div>Projects coming soon...</div>} />
+            <Route path="projects" element={<ProjectsPage />} />
           </Route>
         </Routes>
       </Router>
